@@ -1,0 +1,114 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:  17px;
+  background-color:#000;
+  color: #ccc;
+}
+
+table {
+  overflow: hidden;
+  width: 100%;
+}
+
+tr {
+  padding: 4px;  
+  font-weight: bold; 
+}
+
+
+tr.ERROR  { background-color: #c02f1d; color: #fff; }
+tr.WARN   { background-color: #ff9900; color: #000; }
+tr.STALE   { background-color:#990066; color: #fff; }
+tr.SNOOZE { background-color: #222222; color: #444; }
+tr.INFO   { background-color: #3333FF; color: #fff; }
+
+
+th {
+  text-align: left;
+  padding: 4px;  
+  white-space: nowrap;
+}
+
+
+td {
+  padding: 4px;  
+  white-space: nowrap;
+}
+
+
+
+
+a{
+  color: #FCD900;
+  text-decoration: none;
+}
+
+
+.button {
+    padding: 2px 4px;
+    font: 13px sans-serif;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-color: #aaa #444 #444 #aaa;
+    color: #000
+}
+
+
+div.menu{
+  border-bottom: 1px solid #333;
+  background-color: #111;
+  padding: 4px;
+  color: #ccc;
+}
+
+
+a.menu {
+  display: inline-block;
+}
+
+
+input[type="text"] {
+  border: 1px solid #444;
+  background-color: #999;
+  color: #fff;
+}
+
+
+input[type="submit"] {
+  width: 60px;
+  border: 1px solid #000;
+  background-color: #ff9900;
+  color: #000;
+  margin-top: 5px;
+}
+
+
+
+#POPUP {
+  position: absolute;
+  z-index:10;
+  width: 300px;
+  height: 180px;
+  top: calc(50% - 75px);
+  left: calc(50% - 150px);
+  color: white;
+  background-color: #666;
+  border: 2px solid #fff;
+}
+
+#PU-BAR {
+  background-color: #0066DD;
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+}
+
+#PU-BODY {
+  padding: 5px;
+}
+
+
+
