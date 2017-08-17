@@ -84,11 +84,10 @@ def getAlerts():
         elif end > tnow and tnow > start and enable == True:
             if mon[item]['status'] in ('WARN','ERROR'):
                 out[item] = copy.deepcopy(mon[item])
-            elif mon[item]['status'] == 'OK':
-                if (now - checkedin).seconds > timeout:
-                    out[item] = copy.deepcopy(mon[item])
-                    out[item]['status'] = 'STALE'
-
+        
+        if (now - checkedin).seconds > timeout:
+            out[item] = copy.deepcopy(mon[item])
+            out[item]['status'] = 'STALE'
 
     out = header + json.dumps(out, indent=4, sort_keys=True) + '\n'
     return out

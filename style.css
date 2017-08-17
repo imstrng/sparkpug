@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family:Verdana, Arial, Helvetica, sans-serif;
-  font-size:  17px;
+  font-size:  12px;
   background-color:#000;
   color: #ccc;
 }
@@ -25,6 +25,7 @@ tr.WARN   { background-color: #ff9900; color: #000; }
 tr.STALE   { background-color:#990066; color: #fff; }
 tr.SNOOZE { background-color: #222222; color: #444; }
 tr.INFO   { background-color: #3333FF; color: #fff; }
+tr.STD    { background-color: #444444; color: #ccc; }
 
 
 th {
